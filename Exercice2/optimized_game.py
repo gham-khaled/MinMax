@@ -3,6 +3,9 @@ from Exercice1.game import Game
 
 class OptimizedGame(Game):
     def minmax(self, alpha=float("-inf"), beta=float("inf")):
+        """
+        Same as MinMax function but added the Alpha, Beta Parameters for optimization
+        """
         Game.visited_node += 1
 
         if self.is_over():
