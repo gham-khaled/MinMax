@@ -13,7 +13,7 @@ class Game:
         self.max_player = max_player
 
     def __repr__(self):
-        print("\n Stacks : ", end='')
+        print("\nStacks : ", end='')
         for stack in self.stacks:
             print(str(stack) + " ", end='')
 

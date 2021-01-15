@@ -9,8 +9,8 @@ if __name__ == '__main__':
         score = game.minmax()
         standard_visited_node += (game.visited_node / i)
         Game.visited_node = 0
+    print(f"Le nombre moyen de noeuds visités est: {standard_visited_node / 10} n ")
 
-    print(f"The Node visited in general are {standard_visited_node / 10} n ")
     standard_visited_node = 0
     for i in range(5, 15):
         game = OptimizedGame([i], True)
@@ -18,5 +18,4 @@ if __name__ == '__main__':
         score = game.minmax()
         standard_visited_node += (game.visited_node / i)
         OptimizedGame.visited_node = 0
-
-    print(f"The Node visited in general are {standard_visited_node / 10} n ")
+    print(f"Le nombre moyen de noeuds visités est: {standard_visited_node / 10} n ")
